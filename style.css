@@ -1,0 +1,251 @@
+body {
+background: radial-gradient(circle, rgba(101,133,142,1) 0%, rgba(12,36,83,1) 100%);
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0%;
+    
+    }
+
+.AppContainer {
+        
+   outline-style: none;
+    outline-width: 0px;
+    height: 98vh;
+    width: 99vw;
+    }
+
+    .QuestionAndAnswer {
+        position: relative;
+        transform: translateY(-40%);
+        padding-top: 3%;
+        background: rgba(0, 0, 0, 0.1);
+        position: relative;
+        top: 5%;
+        outline-style: none;
+        outline-width: 1px;
+        height: 70vh;
+        width: 75vw; 
+    }
+
+    .Question {
+        color:rgb(255, 255, 255);
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:bold;
+        text-shadow: 3px 3px 2px #000000;
+        font-size: 140%;
+        position: relative;
+        top: 0;
+        outline-style: none;
+        outline-width: 1px;
+        height: fit-content;
+        width: fit-content;
+        padding: 2%;
+    }
+
+    .AnswersContainer {
+        position: relative;
+        top:0%;
+        outline-style: none;
+        outline-width: 1px;
+        height: 70%;
+        width: 90%; 
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .Answer {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:normal;
+        text-shadow: 2px 2px 1px #000000;
+        font-size: 100%;
+
+        opacity: 100%;
+        position: relative;
+        color: rgb(255, 255, 255);
+        background: rgb(7, 6, 10,0.6);
+        line-height: 390%;
+        text-align: left;
+        top: 14%;
+        margin-top: 2%;
+        padding-left: 2%;
+        outline-style: none;
+        outline-width: 1px;
+        height: 15%;
+        width: 90%; 
+
+        transform: translateX(0px);
+        transition: all 0.5s;
+    }
+
+    .Answer:hover{
+        transform: translateX(10px);
+        background: rgb(7, 6, 10,0.4);
+        transition: all 0.5s;
+        cursor:pointer;
+    }
+
+    .StartContainer {
+        padding: 5px;
+        background: rgb(7, 6, 10,0.4);
+        position: relative;
+        margin-left: 25%;
+        top: 30%;
+        height: 40%;
+        width: 50%;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .ChooseNumberOfQuestionsText {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight:bold;
+        color:white;
+        text-align: center;
+        border-style: none;
+        border-width: 0px;
+        background: rgb(7, 6, 10,0.4);
+        height: 15%;
+        line-height: 250%;
+    }
+
+    .Selection{
+        color:white;
+        text-align: center;
+        font-size: 130%;
+        line-height: 50%;
+        position: relative;
+        top:30%;
+        left:30%;
+        border-style: none;
+        border-width: 1px;
+        height: 50px;
+        width: 40%;
+    }
+
+    .Minus {
+        float: left;
+        width: 32%;
+        height: 100%;        
+        border-style: none;
+        border-width: 1px; 
+        background: rgb(7, 6, 10,0.4);
+    }
+    .Minus:hover {
+        background: rgb(7, 6, 10,0.6);
+        cursor:pointer;
+    }
+    .Number {
+        float: left;
+        width: 32%;
+        height: 100%;        
+        border-style: none;
+        border-width: 1px; 
+        background: rgb(7, 6, 10,0.6);
+    }
+    
+
+    .Plus {
+        float: left;
+        width: 32%;
+        height: 100%;        
+        border-style: none;
+        border-width: 1px; 
+        background: rgb(7, 6, 10,0.4);
+    }
+    .Plus:hover {
+        background: rgb(7, 6, 10,0.6);
+        cursor:pointer;
+    }
+
+    .StartQuiz{
+        line-height: 250%;
+        text-align: center;
+        color: white;
+        position: relative;
+        border-style: none;
+        border-width: 0px;  
+        width: 20%;
+        height: 40px;
+        top:40%;
+        left:40%;
+        background: rgb(7, 6, 10,0.4);
+    }
+    .StartQuiz:hover {
+        background: rgb(7, 6, 10,0.6);
+        cursor:pointer;
+    }
+
+    button {
+        position: relative;
+        color: white;
+        border-style: none;
+        border-width: 0px;  
+        width: 20%;
+        height: 40px;
+        top:5%;
+        left:0%;
+        background: rgb(7, 6, 10,0.4);
+    }
+
+    button:hover {
+        background: rgb(7, 6, 10,0.6);
+        cursor:pointer;
+    }
+
+    .Modal {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        padding-top: 10%;
+        
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(5px);
+      }
+    
+    .Modal-content {
+        color:white;
+        text-align: center;
+        font-size: 30px;
+        background: rgba(2, 1, 3, 0.6);
+        margin:auto;
+        padding: 20px;
+        transform: translate(0,0px);
+        border-radius: 30px;
+        max-width: 300px;
+        height: 450px;
+        
+
+      }
+
+      .ModalText{
+          text-align: left;
+          transform: translateY(100%);
+          font-size: 15px;
+          white-space: pre-wrap;
+      }
+      .ModalText2{
+          text-align: left;
+          transform: translateY(200%);
+          font-size: 15px;
+          white-space: pre-wrap;
+      }
+
+      .CloseButton {
+          font-size: 15px;
+          color:rgba(255, 255, 255, 1);
+          position: relative;
+          transform: translate(45%,-100%);
+          cursor: pointer;
+      }
+
+   
